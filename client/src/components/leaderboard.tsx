@@ -147,7 +147,7 @@ export function Leaderboard({ leaderboard, onViewAll }: LeaderboardProps) {
                       index === 1 ? "text-gray-300" :
                       index === 2 ? "text-amber-400" : ""
                     }`} data-testid={`text-player-score-${index + 1}`}>
-                      {entry.score.toLocaleString()}
+                      {entry.score?.toLocaleString() || "0"}
                     </div>
                     <div className="text-lg">🔥</div>
                   </div>
