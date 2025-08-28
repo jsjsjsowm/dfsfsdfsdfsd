@@ -121,7 +121,7 @@ export function Leaderboard({ leaderboard, onViewAll }: LeaderboardProps) {
                       <p className={`font-bold text-lg ${
                         index === 0 ? "neon-yellow" : ""
                       }`} data-testid={`text-player-name-${index + 1}`}>
-                        {entry.user.firstName || entry.user.username || "Anonymous"}
+                        {entry.user?.firstName || entry.user?.username || "Anonymous"}
                       </p>
                       {index === 0 && (
                         <div className="bg-yellow-500/20 px-2 py-1 rounded-full">
