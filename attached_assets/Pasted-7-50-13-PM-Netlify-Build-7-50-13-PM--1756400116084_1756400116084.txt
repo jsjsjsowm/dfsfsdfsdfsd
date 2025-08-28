@@ -1,0 +1,192 @@
+7:50:13 PM: Netlify Build                                                 
+7:50:13 PM: ────────────────────────────────────────────────────────────────
+7:50:13 PM: ​
+7:50:13 PM: ❯ Version
+7:50:13 PM:   @netlify/build 35.1.2
+7:50:13 PM: ​
+7:50:13 PM: ❯ Flags
+7:50:13 PM:   accountId: 68b0699bf31dcb71baaee401
+7:50:13 PM:   baseRelDir: true
+7:50:13 PM:   buildId: 68b0889f3cf9ef00086c33c9
+7:50:13 PM:   deployId: 68b0889f3cf9ef00086c33cd
+7:50:13 PM: ​
+7:50:13 PM: ❯ Current directory
+7:50:13 PM:   /opt/build/repo
+7:50:13 PM: ​
+7:50:13 PM: ❯ Config file
+7:50:13 PM:   /opt/build/repo/netlify.toml
+7:50:13 PM: ​
+7:50:13 PM: ❯ Context
+7:50:13 PM:   production
+7:50:13 PM: ​
+7:50:13 PM: ❯ Installing extensions
+7:50:13 PM:    - neon
+7:50:14 PM: ​
+7:50:14 PM: ❯ Loading extensions
+7:50:14 PM:    - neon
+7:50:15 PM: ​
+7:50:15 PM: build.command from netlify.toml                               
+7:50:15 PM: ────────────────────────────────────────────────────────────────
+7:50:15 PM: ​
+7:50:15 PM: $ npm install && npm run build
+7:50:17 PM: up to date, audited 482 packages in 2s
+7:50:17 PM: 64 packages are looking for funding
+7:50:17 PM:   run `npm fund` for details
+7:50:17 PM: 11 vulnerabilities (3 low, 8 moderate)
+7:50:17 PM: To address issues that do not require attention, run:
+7:50:17 PM:   npm audit fix
+7:50:17 PM: To address all issues (including breaking changes), run:
+7:50:17 PM:   npm audit fix --force
+7:50:17 PM: Run `npm audit` for details.
+7:50:17 PM: > rest-express@1.0.0 build
+7:50:17 PM: > vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+7:50:17 PM: vite v5.4.19 building for production...
+7:50:17 PM: transforming...
+7:50:17 PM: Browserslist: browsers data (caniuse-lite) is 10 months old. Please run:
+7:50:17 PM:   npx update-browserslist-db@latest
+7:50:17 PM:   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+7:50:21 PM: Failed during stage 'building site': Build script returned non-zero exit code: 2 (https://ntl.fyi/exit-code-2)
+7:50:20 PM: ✓ 1666 modules transformed.
+7:50:20 PM: rendering chunks...
+7:50:20 PM: computing gzip size...
+7:50:20 PM: ../dist/public/index.html                   2.20 kB │ gzip:  0.86 kB
+7:50:20 PM: ../dist/public/assets/index-BhQ2znhj.css   75.39 kB │ gzip: 12.66 kB
+7:50:20 PM: ../dist/public/assets/index-B4AOdue2.js   307.88 kB │ gzip: 95.01 kB
+7:50:20 PM: ✓ built in 2.65s
+7:50:20 PM:   dist/index.js  16.1kb
+7:50:20 PM: ⚡ Done in 3ms
+7:50:20 PM: ​
+7:50:20 PM: (build.command completed in 4.7s)
+7:50:20 PM: ​
+7:50:20 PM: Functions bundling                                            
+7:50:20 PM: ────────────────────────────────────────────────────────────────
+7:50:20 PM: ​
+7:50:20 PM: Packaging Functions from netlify/functions directory:
+7:50:20 PM:  - server.js
+7:50:20 PM: ​
+7:50:20 PM: ​
+7:50:20 PM: Dependencies installation error                               
+7:50:20 PM: ────────────────────────────────────────────────────────────────
+7:50:20 PM: ​
+7:50:20 PM:   Error message
+7:50:20 PM:   A Netlify Function failed to require one of its dependencies.
+7:50:20 PM:   Please make sure it is present in the site's top-level "package.json".
+​
+7:50:20 PM:   In file "/opt/build/repo/netlify/functions/server.js"
+7:50:20 PM:   Cannot find module 'serverless-http'
+7:50:20 PM:   Require stack:
+7:50:20 PM:   - /opt/buildhome/node-deps/node_modules/@netlify/zip-it-and-ship-it/dist/runtimes/node/bundlers/zisi/resolve.js
+7:50:20 PM: ​
+7:50:20 PM:   Resolved config
+7:50:20 PM:   build:
+7:50:20 PM:     command: npm install && npm run build
+7:50:20 PM:     commandOrigin: config
+7:50:20 PM:     environment:
+7:50:20 PM:       - NODE_VERSION
+7:50:20 PM:     publish: /opt/build/repo/dist/public
+7:50:20 PM:     publishOrigin: config
+7:50:20 PM:   functionsDirectory: /opt/build/repo/netlify/functions
+7:50:20 PM:   redirects:
+7:50:21 PM:     - from: /*
+      status: 200
+      to: /index.html
+  redirectsOrigin: config
+7:50:21 PM: Build failed due to a user error: Build script returned non-zero exit code: 2
+7:50:21 PM: Failing build: Failed to build site
+7:50:22 PM: Finished processing build request in 33.517s
+7:50:13 PM: Netlify Build                                                 
+7:50:13 PM: ────────────────────────────────────────────────────────────────
+7:50:13 PM: ​
+7:50:13 PM: ❯ Version
+7:50:13 PM:   @netlify/build 35.1.2
+7:50:13 PM: ​
+7:50:13 PM: ❯ Flags
+7:50:13 PM:   accountId: 68b0699bf31dcb71baaee401
+7:50:13 PM:   baseRelDir: true
+7:50:13 PM:   buildId: 68b0889f3cf9ef00086c33c9
+7:50:13 PM:   deployId: 68b0889f3cf9ef00086c33cd
+7:50:13 PM: ​
+7:50:13 PM: ❯ Current directory
+7:50:13 PM:   /opt/build/repo
+7:50:13 PM: ​
+7:50:13 PM: ❯ Config file
+7:50:13 PM:   /opt/build/repo/netlify.toml
+7:50:13 PM: ​
+7:50:13 PM: ❯ Context
+7:50:13 PM:   production
+7:50:13 PM: ​
+7:50:13 PM: ❯ Installing extensions
+7:50:13 PM:    - neon
+7:50:14 PM: ​
+7:50:14 PM: ❯ Loading extensions
+7:50:14 PM:    - neon
+7:50:15 PM: ​
+7:50:15 PM: build.command from netlify.toml                               
+7:50:15 PM: ────────────────────────────────────────────────────────────────
+7:50:15 PM: ​
+7:50:15 PM: $ npm install && npm run build
+7:50:17 PM: up to date, audited 482 packages in 2s
+7:50:17 PM: 64 packages are looking for funding
+7:50:17 PM:   run `npm fund` for details
+7:50:17 PM: 11 vulnerabilities (3 low, 8 moderate)
+7:50:17 PM: To address issues that do not require attention, run:
+7:50:17 PM:   npm audit fix
+7:50:17 PM: To address all issues (including breaking changes), run:
+7:50:17 PM:   npm audit fix --force
+7:50:17 PM: Run `npm audit` for details.
+7:50:17 PM: > rest-express@1.0.0 build
+7:50:17 PM: > vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+7:50:17 PM: vite v5.4.19 building for production...
+7:50:17 PM: transforming...
+7:50:17 PM: Browserslist: browsers data (caniuse-lite) is 10 months old. Please run:
+7:50:17 PM:   npx update-browserslist-db@latest
+7:50:17 PM:   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+7:50:20 PM: ✓ 1666 modules transformed.
+7:50:20 PM: rendering chunks...
+7:50:20 PM: computing gzip size...
+7:50:20 PM: ../dist/public/index.html                   2.20 kB │ gzip:  0.86 kB
+7:50:20 PM: ../dist/public/assets/index-BhQ2znhj.css   75.39 kB │ gzip: 12.66 kB
+7:50:20 PM: ../dist/public/assets/index-B4AOdue2.js   307.88 kB │ gzip: 95.01 kB
+7:50:20 PM: ✓ built in 2.65s
+7:50:20 PM:   dist/index.js  16.1kb
+7:50:20 PM: ⚡ Done in 3ms
+7:50:20 PM: ​
+7:50:20 PM: (build.command completed in 4.7s)
+7:50:20 PM: ​
+7:50:20 PM: Functions bundling                                            
+7:50:20 PM: ────────────────────────────────────────────────────────────────
+7:50:20 PM: ​
+7:50:20 PM: Packaging Functions from netlify/functions directory:
+7:50:20 PM:  - server.js
+7:50:20 PM: ​
+7:50:20 PM: ​
+7:50:20 PM: Dependencies installation error                               
+7:50:20 PM: ────────────────────────────────────────────────────────────────
+7:50:20 PM: ​
+7:50:20 PM:   Error message
+7:50:20 PM:   A Netlify Function failed to require one of its dependencies.
+7:50:20 PM:   Please make sure it is present in the site's top-level "package.json".
+​
+7:50:20 PM:   In file "/opt/build/repo/netlify/functions/server.js"
+7:50:20 PM:   Cannot find module 'serverless-http'
+7:50:20 PM:   Require stack:
+7:50:20 PM:   - /opt/buildhome/node-deps/node_modules/@netlify/zip-it-and-ship-it/dist/runtimes/node/bundlers/zisi/resolve.js
+7:50:20 PM: ​
+7:50:20 PM:   Resolved config
+7:50:20 PM:   build:
+7:50:20 PM:     command: npm install && npm run build
+7:50:20 PM:     commandOrigin: config
+7:50:20 PM:     environment:
+7:50:20 PM:       - NODE_VERSION
+7:50:20 PM:     publish: /opt/build/repo/dist/public
+7:50:20 PM:     publishOrigin: config
+7:50:20 PM:   functionsDirectory: /opt/build/repo/netlify/functions
+7:50:20 PM:   redirects:
+7:50:21 PM: Failed during stage 'building site': Build script returned non-zero exit code: 2 (https://ntl.fyi/exit-code-2)
+7:50:21 PM:     - from: /*
+      status: 200
+      to: /index.html
+  redirectsOrigin: config
+7:50:21 PM: Build failed due to a user error: Build script returned non-zero exit code: 2
+7:50:21 PM: Failing build: Failed to build site
+7:50:22 PM: Finished processing build request in 33.517s
