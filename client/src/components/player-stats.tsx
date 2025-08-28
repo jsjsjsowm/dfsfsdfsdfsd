@@ -88,7 +88,7 @@ export function PlayerStats({ user, player }: PlayerStatsProps) {
             <div className="flex items-center justify-end space-x-2 mb-1">
               <div className={`text-3xl ${coinFlip ? 'animate-coin-flip' : ''}`}>🪙</div>
               <p className="text-3xl font-display font-bold neon-yellow" data-testid="text-player-coins">
-                {player.coins.toLocaleString()}
+                {player.coins?.toLocaleString() || "0"}
               </p>
             </div>
             <div className="flex items-center justify-end space-x-1">
