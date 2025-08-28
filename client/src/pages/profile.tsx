@@ -72,7 +72,7 @@ export default function Profile({ activeTab, onNavigate }: ProfileProps) {
                 </div>
                 <div className="text-center p-3 bg-accent/10 rounded-lg">
                   <div className="text-2xl font-display font-bold text-accent" data-testid="text-stat-coins">
-                    {player.coins.toLocaleString()}
+                    {player.coins?.toLocaleString() || "0"}
                   </div>
                   <div className="text-sm text-muted-foreground">Coins</div>
                 </div>
@@ -84,7 +84,7 @@ export default function Profile({ activeTab, onNavigate }: ProfileProps) {
                 </div>
                 <div className="text-center p-3 bg-secondary rounded-lg">
                   <div className="text-2xl font-display font-bold" data-testid="text-stat-score">
-                    {player.totalScore.toLocaleString()}
+                    {player.totalScore?.toLocaleString() || "0"}
                   </div>
                   <div className="text-sm text-muted-foreground">Total Score</div>
                 </div>
