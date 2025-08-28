@@ -18,8 +18,6 @@
 html, body {
   height: 100vh;
   height: 100dvh;
-  overflow: hidden;
-  position: fixed;
   width: 100%;
   overscroll-behavior: none;
   -webkit-overflow-scrolling: touch;
@@ -27,9 +25,8 @@ html, body {
 }
 
 #root {
-  height: 100vh;
-  height: 100dvh;
-  overflow: hidden;
+  min-height: 100vh;
+  min-height: 100dvh;
   position: relative;
 }
 
